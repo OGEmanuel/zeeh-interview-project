@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Public+Sans:wght@400;700;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.company {
+  @apply font-bold text-[1.0278875rem];
+}
+
+.li-nav {
+  @apply company text-gray-secondary;
+}
+
+.flex-items-center {
+  @apply flex items-center;
+}
+
+.nav-button {
+  @apply py-1.5 px-5 rounded-custom;
+}

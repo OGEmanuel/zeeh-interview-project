@@ -5,10 +5,10 @@ import icon from '../public/icons/icon-nav.svg';
 
 const NavBar = () => {
   return (
-    <nav className="flex-items-center justify-between pt-4 px-7">
+    <nav className="flex-items-center justify-between py-4 px-7">
       <Link href="/" className="flex gap-4">
         <Image src={logo} alt="logo" />
-        <p className="text-[29px] font-mont font-extrabold bg-logo text-transparent bg-clip-text ">
+        <p className="text-[1.8125rem] font-mont font-extrabold bg-logo text-transparent bg-clip-text ">
           Zeeh
         </p>
       </Link>

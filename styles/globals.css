@@ -19,3 +19,11 @@
 .nav-button {
   @apply py-1.5 px-5 rounded-custom;
 }
+
+.div-center {
+  @apply w-max mx-auto;
+}
+
+.lg-bold {
+  @apply text-lg font-bold;
+}

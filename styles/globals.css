@@ -72,6 +72,14 @@
   @apply text-center rounded-custom-lg p-10 flex-col-between;
 }
 
+.how-container {
+  @apply rounded-custom-2x pt-10 pb-28 px-16 flex-col-between;
+}
+
 .how-main-p {
-  @apply text-[1.875rem];
+  @apply text-[1.875rem] capitalize mb-7;
+}
+
+.how-sub-p {
+  @apply text-[1.0625rem];
 }

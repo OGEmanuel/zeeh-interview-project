@@ -18,6 +18,8 @@ module.exports = {
       backgroundImage: {
         logo: 'linear-gradient(124.32deg, #1A23DC 19.22%, #62228A 46.62%)',
         hero: 'linear-gradient(147.77deg, rgba(217, 217, 217, 0) 16.72%, rgba(255, 241, 190, 0.33) 35.68%, rgba(255, 247, 177, 0.49) 53.09%, rgba(241, 231, 255, 0) 66.68%)',
+        'black-feature-card':
+          'linear-gradient(125.94deg, #000000 26.65%, #58504C 91.33%)',
       },
       colors: {
         'gray-secondary': '#707070',
@@ -25,6 +27,9 @@ module.exports = {
         'blue-primary': '#293CE1',
         'header-body': 'rgba(77, 77, 77, 0.65)',
         'hero-button': '#293CE2',
+        'partners-color': '#565656',
+        'blue-feature-card': '#050F3A',
+        'card-p': 'rgba(255, 255, 255, 0.65)',
       },
     },
   },

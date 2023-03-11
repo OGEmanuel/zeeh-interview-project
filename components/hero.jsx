@@ -4,9 +4,9 @@ import HeroSvg from './svg/hero-svg';
 
 const Hero = () => {
   return (
-    <section className="bg-hero">
+    <section className="bg-hero mb-10">
       <NavBar />
-      <div className="pt-20 pb-40 text-center">
+      <div className="pt-20 pb-56 text-center">
         <div className="font-public">
           <p className="text-gray-secondary text-lg">CONNECT</p>
           <h1 className="text-[4.1875rem] font-black px-96 capitalize mb-4">

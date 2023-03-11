@@ -1884,9 +1884,9 @@ const HeroSvg = () => {
           y2="272.766"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#3FFFFF" />
-          <stop offset="0.6" stop-color="#3ECAFF" />
-          <stop offset="1" stop-color="#3EA2EA" />
+          <stop stopColor="#3FFFFF" />
+          <stop offset="0.6" stopColor="#3ECAFF" />
+          <stop offset="1" stopColor="#3EA2EA" />
         </linearGradient>
         <image
           id="image0_554_2084"

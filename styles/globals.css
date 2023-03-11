@@ -27,3 +27,19 @@
 .lg-bold {
   @apply text-lg font-bold;
 }
+
+.feature-p-main {
+  @apply text-white font-bold text-[1.875rem];
+}
+
+.feature-p-sub {
+  @apply text-[1.0625rem] text-card-p font-bold w-[24rem];
+}
+
+.feature-card {
+  @apply rounded-custom-2x p-16 flex flex-col justify-between;
+}
+
+.feature-img {
+  @apply div-center py-10;
+}

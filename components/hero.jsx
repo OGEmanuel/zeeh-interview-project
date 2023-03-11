@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import NavBar from './navbar';
 import HeroSvg from './svg/hero-svg';
+import CTAMain from './UI/cta-main';
 
 const Hero = () => {
   return (
@@ -19,17 +20,7 @@ const Hero = () => {
           statements ranging from 1-12 months without writing a single line of
           code.
         </p>
-        <div className="div-center font-public mb-12">
-          <Link
-            href="/"
-            className="block nav-button bg-hero-button w-max text-white lg-bold mb-4"
-          >
-            Start Using Connect
-          </Link>
-          <Link href="/" className="block lg-bold text-blue-primary">
-            Book a Demo
-          </Link>
-        </div>
+        <CTAMain />
         <div className="div-center">
           <HeroSvg />
         </div>

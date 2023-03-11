@@ -1,6 +1,6 @@
 const How = () => {
   return (
-    <section>
+    <section className="mb-40">
       <h4 className="h4">HOW IT WORKS</h4>
       <div className="px-20 font-mont font-bold text-center grid-custom">
         <div className="bg-how-bg-1 how-container">

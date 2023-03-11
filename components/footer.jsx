@@ -96,9 +96,18 @@ const Footer = () => {
           © All rights reserved, Zeeh Africa 2022
         </p>
         <div className="flex gap-[0.625rem]">
-          <Image src={linkedin} alt="LinkedIn" />
-          <Image src={twitter} alt="twitter" />
-          <Image src={ig} alt="Instagram" />
+          <Link href="/">
+            {' '}
+            <Image src={linkedin} alt="LinkedIn" />{' '}
+          </Link>
+          <Link href="/">
+            {' '}
+            <Image src={twitter} alt="twitter" />
+          </Link>
+          <Link href="/">
+            {' '}
+            <Image src={ig} alt="Instagram" />
+          </Link>
         </div>
       </div>
       <Image

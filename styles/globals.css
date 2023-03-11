@@ -45,7 +45,7 @@
 }
 
 .feature-p-sub {
-  @apply text-[1.0625rem] text-card-p font-bold w-[24rem];
+  @apply text-[1.0625rem] text-card-p font-bold w-96;
 }
 
 .feature-card {
@@ -70,4 +70,8 @@
 
 .benefit-container {
   @apply text-center rounded-custom-lg p-10 flex-col-between;
+}
+
+.how-main-p {
+  @apply text-[1.875rem];
 }

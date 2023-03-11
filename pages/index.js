@@ -1,6 +1,7 @@
 import Benefits from '@/components/benefits';
 import Features from '@/components/features';
 import Hero from '@/components/hero';
+import How from '@/components/how';
 import Partners from '@/components/partners';
 import Head from 'next/head';
 
@@ -18,6 +19,7 @@ export default function Home() {
         <Partners />
         <Features />
         <Benefits />
+        <How />
       </main>
     </>
   );

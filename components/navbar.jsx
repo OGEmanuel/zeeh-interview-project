@@ -36,10 +36,15 @@ const NavBar = () => {
         </li>
       </ul>
       <div className="flex gap-2 text-lg font-bold font-public">
-        <button className="bg-logo text-white nav-button">Log in</button>
-        <button className="border border-blue-primary nav-button text-blue-primary">
+        <Link href="/" className="bg-logo text-white nav-button">
+          Log in
+        </Link>
+        <Link
+          href="/"
+          className="border border-blue-primary nav-button text-blue-primary"
+        >
           Sign up
-        </button>
+        </Link>
       </div>
     </nav>
   );

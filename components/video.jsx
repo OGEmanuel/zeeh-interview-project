@@ -10,7 +10,7 @@ const Video = () => {
           allow="autoplay; encrypted-media"
           allowFullScreen
           title="video"
-          frameborder="0"
+          frameBorder="0"
           className="h-[35.0625rem] w-full"
         />
       </div>

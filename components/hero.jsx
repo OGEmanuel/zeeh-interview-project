@@ -10,8 +10,8 @@ const Hero = () => {
       <div className="pt-20 pb-56 text-center">
         <div className="font-public">
           <p className="text-gray-secondary text-lg">CONNECT</p>
-          <h1 className="text-[4.1875rem] font-black px-96 capitalize mb-4">
-            Connect all your financial data
+          <h1 className="text-[4.1875rem] font-black px-80 capitalize mb-4 text-blue-feature-card">
+            Connect financial data Across Banks
           </h1>
         </div>
         <p className="font-mont lg-bold text-header-body px-72 mb-10">

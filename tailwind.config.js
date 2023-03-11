@@ -26,6 +26,10 @@ module.exports = {
         'benefit-2':
           'linear-gradient(149.21deg, #51B8BF 11.69%, #4AF4FF 81.33%)',
         'benefit-4': 'linear-gradient(137.55deg, #050F3A 8.3%, #29366D 76.11%)',
+        'final-section':
+          'linear-gradient(242.61deg, #267E9E -21.75%, #081C3A 59.64%)',
+        'bg-final-section':
+          'linear-gradient(167.21deg, rgba(217, 217, 217, 0) 13.78%, rgba(217, 190, 255, 0.33) 33.92%, rgba(217, 189, 255, 0.49) 52.41%, rgba(241, 231, 255, 0) 66.84%)',
       },
       colors: {
         'gray-secondary': '#707070',
@@ -44,6 +48,7 @@ module.exports = {
         'how-sub-1': '#2F686C',
         'how-bg-1': '#51B8BF',
         'how-bg-3': '#FFEFE7',
+        'final-section-sub': 'rgba(255, 255, 255, 0.85)',
       },
     },
   },

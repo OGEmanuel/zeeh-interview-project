@@ -49,6 +49,8 @@ module.exports = {
         'how-bg-1': '#51B8BF',
         'how-bg-3': '#FFEFE7',
         'final-section-sub': 'rgba(255, 255, 255, 0.85)',
+        'footer-bg': '#060C42',
+        border: '#D7D7D7',
       },
     },
   },

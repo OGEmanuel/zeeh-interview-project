@@ -2,7 +2,7 @@ import CTAMain from './UI/cta-main';
 
 const Video = () => {
   return (
-    <section>
+    <section className="mb-20">
       <h4 className="h4">WATCH THIS VIDEO TO LEARN MORE ABOUT OUR PRODUCT</h4>
       <div className="px-20 mb-10">
         <iframe

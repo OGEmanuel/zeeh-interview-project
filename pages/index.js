@@ -1,6 +1,7 @@
 import API from '@/components/api';
 import Benefits from '@/components/benefits';
 import Features from '@/components/features';
+import Footer from '@/components/footer';
 import Hero from '@/components/hero';
 import How from '@/components/how';
 import Partners from '@/components/partners';
@@ -25,6 +26,7 @@ export default function Home() {
         <Video />
         <API />
       </main>
+      <Footer />
     </>
   );
 }

@@ -83,3 +83,11 @@
 .how-sub-p {
   @apply text-[1.0625rem];
 }
+
+.footer-spacing {
+  @apply mb-2;
+}
+
+.half-width {
+  @apply w-[50%]
+}

@@ -1,3 +1,4 @@
+import Benefits from '@/components/benefits';
 import Features from '@/components/features';
 import Hero from '@/components/hero';
 import Partners from '@/components/partners';
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <Partners />
         <Features />
+        <Benefits />
       </main>
     </>
   );

@@ -4,6 +4,26 @@
 @tailwind components;
 @tailwind utilities;
 
+.flex-items-center {
+  @apply flex items-center;
+}
+
+.div-center {
+  @apply w-max mx-auto;
+}
+
+.flex-col-between {
+  @apply flex flex-col justify-between;
+}
+
+.grid-custom {
+  @apply grid grid-cols-[repeat(auto-fit,_minmax(30rem,_1fr))] gap-x-5 gap-y-10;
+}
+
+.h4 {
+  @apply text-gray-secondary text-center font-public mb-16;
+}
+
 .company {
   @apply font-bold text-[1.0278875rem];
 }
@@ -12,16 +32,8 @@
   @apply company text-gray-secondary;
 }
 
-.flex-items-center {
-  @apply flex items-center;
-}
-
 .nav-button {
   @apply py-1.5 px-5 rounded-custom;
-}
-
-.div-center {
-  @apply w-max mx-auto;
 }
 
 .lg-bold {
@@ -37,9 +49,25 @@
 }
 
 .feature-card {
-  @apply rounded-custom-2x p-16 flex flex-col justify-between;
+  @apply rounded-custom-2x p-16 flex-col-between;
 }
 
 .feature-img {
   @apply div-center py-10;
+}
+
+.benefit-p-main {
+  @apply font-public font-bold text-[1.64125rem];
+}
+
+.benefit-sub-last {
+  @apply font-mont text-[1.0625rem] pt-3 pb-10;
+}
+
+.benefit-p-sub {
+  @apply benefit-sub-last text-header-body;
+}
+
+.benefit-container {
+  @apply text-center rounded-custom-lg p-10 flex-col-between;
 }

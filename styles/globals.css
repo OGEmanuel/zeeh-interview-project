@@ -85,9 +85,9 @@
 }
 
 .footer-spacing {
-  @apply mb-2;
+  @apply mb-2 hover:underline;
 }
 
 .half-width {
-  @apply w-[50%]
+  @apply w-[50%];
 }

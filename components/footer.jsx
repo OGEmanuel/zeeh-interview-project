@@ -43,7 +43,7 @@ const Footer = () => {
             <li className="footer-spacing">
               <Link href="/">API docs</Link>
             </li>
-            <li className="footer-spacing half-width">
+            <li className="footer-spacing w-[70%]">
               <Link href="/">Libraries and SDKs</Link>
             </li>
             <li className="footer-spacing">

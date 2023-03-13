@@ -91,3 +91,7 @@
 .half-width {
   @apply w-[50%];
 }
+
+.sticky {
+  @apply fixed bg-white w-full z-20;
+}

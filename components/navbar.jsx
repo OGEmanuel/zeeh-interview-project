@@ -2,10 +2,24 @@ import Image from 'next/image';
 import Link from 'next/link';
 import logo from '../public/images/logo.png';
 import icon from '../public/icons/icon-nav.svg';
+import { useEffect, useRef } from 'react';
 
-const NavBar = () => {
+const NavBar = props => {
+  const { sticky, onGetNavHeight } = props;
+  const ref = useRef();
+
+  useEffect(() => {
+    onGetNavHeight(ref.current.getBoundingClientRect().height);
+  }, []);
+
   return (
-    <nav className="flex-items-center justify-between py-4 px-10">
+    <nav
+      ref={ref}
+      className={`flex-items-center justify-between py-4 px-10 ${
+        sticky ? 'sticky' : ''
+      }
+      `}
+    >
       <Link href="/" className="flex gap-4">
         <Image src={logo} alt="logo" />
         <p className="text-[1.8125rem] font-mont font-extrabold bg-logo text-transparent bg-clip-text ">

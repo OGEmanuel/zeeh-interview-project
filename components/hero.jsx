@@ -1,12 +1,41 @@
-import Link from 'next/link';
+// import Link from 'next/link';
+import { useRef, useEffect, useState } from 'react';
 import NavBar from './navbar';
 import HeroSvg from './svg/hero-svg';
 import CTAMain from './UI/cta-main';
 
 const Hero = () => {
+  const ref = useRef();
+  const [sticky, setSticky] = useState(false);
+  const [height, setHeight] = useState(0);
+  const getNavHeight = height => {
+    setHeight(height);
+  };
+
+  const stickyNav = entries => {
+    const [entry] = entries;
+
+    if (!entry.isIntersecting) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  };
+
+  useEffect(() => {
+    const partnersObserver = new IntersectionObserver(stickyNav, {
+      root: null,
+      threshold: 0,
+      rootMargin: `-${height}px`,
+    });
+    if (ref.current) partnersObserver.observe(ref.current);
+    return () => {
+      if (ref.current) partnersObserver.unobserve(ref.current);
+    };
+  }, [ref]);
   return (
-    <section className="bg-hero mb-10">
-      <NavBar />
+    <section ref={ref} className="bg-hero mb-10">
+      <NavBar sticky={sticky} onGetNavHeight={getNavHeight} />
       <div className="pt-20 pb-56 text-center">
         <div className="font-public">
           <p className="text-gray-secondary text-lg">CONNECT</p>

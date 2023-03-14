@@ -8,15 +8,15 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-footer-bg text-white font-public px-20 pt-20 relative pb-10">
-      <div className="flex flex-wrap items-start border-b border-border pb-5 mb-5 gap-16">
+    <footer className="bg-footer-bg text-white font-public px-10 md:px-20 pt-10 md:pt-20 relative pb-10">
+      <div className="flex flex-wrap items-start border-b border-border pb-5 mb-5 gap-10 md:gap-16">
         <div className="flex-items-center mt-6 gap-4">
           <Image src={logo} alt="logo" />
           <Link href="/" className="text-sm">
             The future of finance is here!
           </Link>
         </div>
-        <div className="text-lg flex flex-wrap justify-between gap-24">
+        <div className="text-lg flex flex-wrap justify-between gap-16 md:gap-24">
           <ul>
             <li className="font-bold mb-2">Product</li>
             <li className="footer-spacing">
@@ -91,7 +91,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="flex justify-between flex-wrap">
+      <div className="flex justify-between flex-wrap gap-5 md:gap-0">
         <p className="text-sm font-light">
           © All rights reserved, Zeeh Africa 2022
         </p>
@@ -113,7 +113,7 @@ const Footer = () => {
       <Image
         src={cables}
         alt="cables"
-        className="absolute left-0 bottom-[40%]"
+        className="absolute left-0 bottom-[47%] md:bottom-[40%]"
       />
     </footer>
   );

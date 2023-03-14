@@ -19,7 +19,7 @@ const CTAMain = () => {
       variants={variants}
       initial="hidden"
       animate="visible"
-      className="div-center font-public md:mb-12 text-center"
+      className="div-center font-public md:mb-8 xl:mb-12 text-center"
     >
       <Link
         href="/"

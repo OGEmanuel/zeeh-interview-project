@@ -13,7 +13,7 @@ const useRevealSection = ref => {
   useEffect(() => {
     const sectionObserver = new IntersectionObserver(revealSection, {
       root: null,
-      threshold: 0.05,
+      threshold: 0,
     });
     if (ref.current) sectionObserver.observe(ref.current);
     return () => {

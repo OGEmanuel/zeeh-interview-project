@@ -35,7 +35,7 @@ const HeroSvg = () => {
 
   return (
     <motion.svg
-      className="w-[10rem] md:w-auto mx-auto"
+      className="w-[10rem] md:w-[15rem] xl:w-auto mx-auto"
       ref={ref}
       animate={animation}
       width="278"

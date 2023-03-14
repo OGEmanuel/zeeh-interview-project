@@ -17,11 +17,11 @@
 }
 
 .grid-custom {
-  @apply grid grid-cols-[repeat(auto-fit,_minmax(10rem,_1fr))] md:grid-cols-[repeat(auto-fit,_minmax(30rem,_1fr))] gap-x-5 gap-y-10;
+  @apply grid grid-cols-[repeat(auto-fit,_minmax(15rem,_1fr))] md:grid-cols-[repeat(auto-fit,_minmax(25rem,_1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(30rem,_1fr))] gap-x-5 gap-y-5 md:gap-y-10 mx-auto max-w-[25rem] md:max-w-[35rem] xl:max-w-0;
 }
 
 .h4 {
-  @apply text-gray-secondary text-sm md:text-base text-center font-public mb-8 md:mb-16;
+  @apply text-gray-secondary text-sm md:text-base text-center font-public mb-8 xl:mb-16;
 }
 
 .company {
@@ -45,11 +45,11 @@
 }
 
 .feature-p-sub {
-  @apply text-xs md:text-[1.0625rem] text-card-p  font-bold md:w-96;
+  @apply text-xs md:text-[1.0625rem] text-card-p font-bold xl:w-96 md:leading-[1.5] xl:leading-normal;
 }
 
 .feature-card {
-  @apply rounded-custom-2x p-4 md:p-16 flex-col-between;
+  @apply rounded-custom-2x p-5 md:p-10 xl:p-16 flex-col-between;
 }
 
 .feature-img {
@@ -73,7 +73,7 @@
 }
 
 .how-container {
-  @apply rounded-custom-2x pt-5 md:pt-10 pb-16 md:pb-28 px-16 flex-col-between;
+  @apply rounded-custom-2x pt-5 md:pt-10 pb-16 xl:pb-28 md:px-10 xl:px-16 flex-col-between;
 }
 
 .how-main-p {

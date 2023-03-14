@@ -28,7 +28,7 @@ const containerVariant = {
 
 const childVariant = {
   hidden: { y: 20, opacity: 0 },
-  visible: { y: 0, opacity: 1, transition: { delay: 0.5 } },
+  visible: { y: 0, opacity: 1 },
 };
 
 const Features = () => {
@@ -47,7 +47,7 @@ const Features = () => {
   }, [display, animation]);
 
   return (
-    <section ref={ref} className={`px-10 mb-20 md:mb-40`}>
+    <section ref={ref} className={`px-10 mb-20 xl:mb-40`}>
       <h4 className="h4">THE THINGS YOU GET WITH OUR CONNECT INFRASTRUCTURE</h4>
       <motion.div
         animate={animation}

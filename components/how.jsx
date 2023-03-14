@@ -19,9 +19,6 @@ const childVariant = {
   visible: {
     y: 0,
     opacity: 1,
-    transition: {
-      delay: 0.5,
-    },
   },
 };
 
@@ -41,7 +38,7 @@ const How = () => {
   }, [display, animation]);
 
   return (
-    <section ref={ref} className={`mb-20 md:mb-40`}>
+    <section ref={ref} className={`mb-20 xl:mb-40`}>
       <h4 className="h4">HOW IT WORKS</h4>
       <motion.div
         animate={animation}
@@ -53,7 +50,7 @@ const How = () => {
           className="bg-how-bg-1 how-container"
         >
           <p className="how-main-p text-benefits-main-2">Create an app</p>
-          <p className="how-sub-p text-how-sub-1">
+          <p className="how-sub-p text-how-sub-1 md:leading-[1.5] xl:leading-normal">
             Create an app on the dashboard. During creation, select the product
             type; KYC in this case
           </p>
@@ -63,7 +60,7 @@ const How = () => {
           className="bg-benefits-main-3 how-container"
         >
           <p className="how-main-p text-white">integrate app link</p>
-          <p className="how-sub-p text-card-p">
+          <p className="how-sub-p text-card-p md:leading-[1.5] xl:leading-normal">
             Copy unique app link and send to customers or integrate on the
             platform for customers to click
           </p>
@@ -75,7 +72,7 @@ const How = () => {
           <p className="how-main-p text-benefits-main-3">
             Get authentication from customers
           </p>
-          <p className="how-sub-p text-header-body">
+          <p className="how-sub-p text-header-body md:leading-[1.5] xl:leading-normal">
             Customers keys in correct bank details (for any bank at all in
             Nigeria)
           </p>
@@ -85,7 +82,7 @@ const How = () => {
           className="how-container shadow-2xl"
         >
           <p className="how-main-p text-benefits-main-3">confirm query</p>
-          <p className="how-sub-p text-header-body">
+          <p className="how-sub-p text-header-body md:leading-[1.5] xl:leading-normal">
             If successful, you will be notified by email about newly added
             customers
           </p>

@@ -1,6 +1,44 @@
+import { motion } from 'framer-motion';
+import { useAnimation } from 'framer-motion';
+import { useEffect, useRef } from 'react';
+import useRevealSection from '../hooks/use-reveal-section';
+
+// const svgVariants = {
+//   hidden: { scale: 0 },
+//   visible: {
+//     rotate: 360,
+//     scale: 1,
+//     transition: { type: 'spring', stiffness: 260, damping: 20, delay: 1.5 },
+//   },
+// };
+
 const HeroSvg = () => {
+  const ref = useRef();
+  const animation = useAnimation();
+  const { display } = useRevealSection(ref);
+
+  useEffect(() => {
+    if (display) {
+      animation.start({
+        rotate: 360,
+        scale: 1,
+        transition: { type: 'spring', stiffness: 260, damping: 20 },
+      });
+    }
+    if (!display)
+      animation.start({
+        rotate: -360,
+        scale: 0,
+        transition: { type: 'spring', stiffness: 260, damping: 20 },
+      });
+  }, [display, animation]);
+
   return (
-    <svg
+    <motion.svg
+      ref={ref}
+      // variants={svgVariants}
+      // initial="hidden"
+      animate={animation}
       width="278"
       height="303"
       viewBox="0 0 278 303"
@@ -8,7 +46,7 @@ const HeroSvg = () => {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
-      <path
+      <svg
         d="M125.591 271.058C94.7647 288.857 66.8455 290.507 46.6865 278.788L75.4639 295.514C95.628 307.233 123.547 305.583 154.373 287.784C165.372 281.434 175.993 273.459 186.016 264.238L157.234 247.512C147.211 256.733 136.59 264.708 125.591 271.058Z"
         fill="#3FFFFF"
       />
@@ -2219,7 +2257,7 @@ const HeroSvg = () => {
           xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAiCAYAAADLTFBPAAAABHNCSVQICAgIfAhkiAAAAGxJREFUWIXt2MEKgCAQANGM/v93O24nIURiU5kIZm6CLm+vlogztp+1fw0YSTSVaCrRVKKpRFOJphJNJZpKNJVoKtFUoqlEU4mmOuael+bMfMAm0S3u7b21yzygs9BM91nzC3TQK7G96vxx/AXNWghDXDO+ZwAAAABJRU5ErkJggg=="
         />
       </defs>
-    </svg>
+    </motion.svg>
   );
 };
 

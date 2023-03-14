@@ -1,8 +1,19 @@
-// import Link from 'next/link';
 import { useRef, useEffect, useState } from 'react';
 import NavBar from './navbar';
 import HeroSvg from './svg/hero-svg';
 import CTAMain from './UI/cta-main';
+import { motion } from 'framer-motion';
+
+const h1Variants = {
+  hidden: {
+    opacity: 1,
+    fontSize: '2rem',
+  },
+  visible: {
+    opacity: 1,
+    fontSize: '4.1875rem',
+  },
+};
 
 const Hero = () => {
   const ref = useRef();
@@ -39,9 +50,14 @@ const Hero = () => {
       <div className="pt-20 pb-56 text-center">
         <div className="font-public">
           <p className="text-gray-secondary text-lg">CONNECT</p>
-          <h1 className="text-[4.1875rem] font-black px-80 capitalize mb-4 text-blue-feature-card">
+          <motion.h1
+            variants={h1Variants}
+            initial="hidden"
+            animate="visible"
+            className="text-[4.1875rem] font-black px-80 capitalize mb-4 text-blue-feature-card"
+          >
             Connect financial data Across Banks
-          </h1>
+          </motion.h1>
         </div>
         <p className="font-mont lg-bold text-header-body px-72 mb-10">
           With Zeeh&rsquo;s easy-to-use API endpoints, you can access

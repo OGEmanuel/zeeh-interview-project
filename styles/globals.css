@@ -9,7 +9,7 @@
 }
 
 .div-center {
-  @apply w-max mx-auto;
+  @apply md:w-max mx-auto;
 }
 
 .flex-col-between {
@@ -17,11 +17,11 @@
 }
 
 .grid-custom {
-  @apply grid grid-cols-[repeat(auto-fit,_minmax(30rem,_1fr))] gap-x-5 gap-y-10;
+  @apply grid grid-cols-[repeat(auto-fit,_minmax(10rem,_1fr))] md:grid-cols-[repeat(auto-fit,_minmax(30rem,_1fr))] gap-x-5 gap-y-10;
 }
 
 .h4 {
-  @apply text-gray-secondary text-center font-public mb-16;
+  @apply text-gray-secondary text-sm md:text-base text-center font-public mb-8 md:mb-16;
 }
 
 .company {
@@ -37,19 +37,19 @@
 }
 
 .lg-bold {
-  @apply text-lg font-bold;
+  @apply md:text-lg font-bold;
 }
 
 .feature-p-main {
-  @apply text-white font-bold text-[1.875rem];
+  @apply text-white font-bold text-xl md:text-[1.875rem];
 }
 
 .feature-p-sub {
-  @apply text-[1.0625rem] text-card-p font-bold w-96;
+  @apply text-xs md:text-[1.0625rem] text-card-p  font-bold md:w-96;
 }
 
 .feature-card {
-  @apply rounded-custom-2x p-16 flex-col-between;
+  @apply rounded-custom-2x p-4 md:p-16 flex-col-between;
 }
 
 .feature-img {
@@ -57,11 +57,11 @@
 }
 
 .benefit-p-main {
-  @apply font-public font-bold text-[1.64125rem];
+  @apply font-public font-bold text-lg md:text-[1.64125rem];
 }
 
 .benefit-sub-last {
-  @apply font-mont text-[1.0625rem] pt-3 pb-10;
+  @apply font-mont text-sm md:text-[1.0625rem] pt-3 pb-10;
 }
 
 .benefit-p-sub {
@@ -73,15 +73,15 @@
 }
 
 .how-container {
-  @apply rounded-custom-2x pt-10 pb-28 px-16 flex-col-between;
+  @apply rounded-custom-2x pt-5 md:pt-10 pb-16 md:pb-28 px-16 flex-col-between;
 }
 
 .how-main-p {
-  @apply text-[1.875rem] capitalize mb-7;
+  @apply text-lg md:text-[1.875rem] capitalize mb-7;
 }
 
 .how-sub-p {
-  @apply text-[1.0625rem];
+  @apply text-sm md:text-[1.0625rem];
 }
 
 .footer-spacing {

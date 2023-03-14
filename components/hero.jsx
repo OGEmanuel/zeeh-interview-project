@@ -2,18 +2,6 @@ import { useRef, useEffect, useState } from 'react';
 import NavBar from './navbar';
 import HeroSvg from './svg/hero-svg';
 import CTAMain from './UI/cta-main';
-import { motion } from 'framer-motion';
-
-const h1Variants = {
-  hidden: {
-    opacity: 1,
-    fontSize: '2rem',
-  },
-  visible: {
-    opacity: 1,
-    fontSize: '4.1875rem',
-  },
-};
 
 const Hero = () => {
   const ref = useRef();
@@ -45,21 +33,18 @@ const Hero = () => {
     };
   }, [ref]);
   return (
-    <section ref={ref} className="bg-hero mb-10">
+    <section ref={ref} className="bg-hero mb-5 md:mb-10 px-5 md:px-auto">
       <NavBar sticky={sticky} onGetNavHeight={getNavHeight} />
-      <div className="pt-20 pb-56 text-center">
+      <div className="pt-5 md:pt-20 pb-0 md:pb-56 text-center">
         <div className="font-public">
-          <p className="text-gray-secondary text-lg">CONNECT</p>
-          <motion.h1
-            variants={h1Variants}
-            initial="hidden"
-            animate="visible"
-            className="text-[4.1875rem] font-black px-80 capitalize mb-4 text-blue-feature-card"
-          >
+          <p className="text-gray-secondary md:text-lg mb-2.5 md:mb-auto">
+            CONNECT
+          </p>
+          <h1 className="text-4xl leading-[1] md:leading-normal md:text-[4.1875rem] font-black md:w-[50%] mx-auto capitalize mb-4 text-blue-feature-card">
             Connect financial data Across Banks
-          </motion.h1>
+          </h1>
         </div>
-        <p className="font-mont lg-bold text-header-body px-72 mb-10">
+        <p className="font-mont lg-bold text-header-body md:w-[56%] mx-auto mb-6 md:mb-10">
           With Zeeh&rsquo;s easy-to-use API endpoints, you can access
           holder&rsquo;s full name and other bio data including transactions and
           statements ranging from 1-12 months without writing a single line of

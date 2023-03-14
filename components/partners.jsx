@@ -19,7 +19,7 @@ const Partners = () => {
       <p className="font-bold text-[1.25rem] font-mont text-partners-color">
         Trusted by
       </p>
-      <div className="flex-items-center flex-wrap gap-20">
+      <div className="flex-items-center flex-wrap gap-10 md:gap-20">
         <Image src={daxlinks} alt="daxlinks logo" />
         <Image src={tomx} alt="tomxcredit logo" />
         <Image src={credley} alt="credley logo" />

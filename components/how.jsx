@@ -16,7 +16,13 @@ const containerVariant = {
 
 const childVariant = {
   hidden: { y: 20, opacity: 0 },
-  visible: { y: 0, opacity: 1 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.5,
+    },
+  },
 };
 
 const How = () => {
@@ -35,13 +41,12 @@ const How = () => {
   }, [display, animation]);
 
   return (
-    <section className={`mb-40`}>
+    <section ref={ref} className={`mb-20 md:mb-40`}>
       <h4 className="h4">HOW IT WORKS</h4>
       <motion.div
         animate={animation}
-        ref={ref}
         variants={containerVariant}
-        className="px-20 font-mont font-bold text-center grid-custom"
+        className="px-5 md:px-20 font-mont font-bold text-center grid-custom"
       >
         <motion.div
           variants={childVariant}

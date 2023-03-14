@@ -28,7 +28,7 @@ const containerVariant = {
 
 const childVariant = {
   hidden: { y: 20, opacity: 0 },
-  visible: { y: 0, opacity: 1 },
+  visible: { y: 0, opacity: 1, transition: { delay: 0.5 } },
 };
 
 const Features = () => {
@@ -47,10 +47,9 @@ const Features = () => {
   }, [display, animation]);
 
   return (
-    <section className={`px-10 mb-40`}>
+    <section ref={ref} className={`px-10 mb-20 md:mb-40`}>
       <h4 className="h4">THE THINGS YOU GET WITH OUR CONNECT INFRASTRUCTURE</h4>
       <motion.div
-        ref={ref}
         animate={animation}
         variants={containerVariant}
         className="font-mont grid-custom"
@@ -63,7 +62,11 @@ const Features = () => {
               whileHover="hover"
               whileTap="tap"
             >
-              <Image src={wallet} alt="wallet" className="feature-img" />
+              <Image
+                src={wallet}
+                alt="wallet"
+                className="feature-img w-[7rem]"
+              />
             </motion.div>
             <p className="feature-p-sub">
               Zeeh gives businesses direct interaction with their client&rsquo;s
@@ -83,7 +86,7 @@ const Features = () => {
               <Image
                 src={transaction}
                 alt="transaction"
-                className="feature-img"
+                className="feature-img w-[7rem]"
               />
             </motion.div>
             <p className="feature-p-sub">
@@ -103,7 +106,7 @@ const Features = () => {
               <Image
                 src={dollarCard}
                 alt="dollar card"
-                className="feature-img"
+                className="feature-img w-[5rem]"
               />
             </motion.div>
             <p className="feature-p-sub">
@@ -123,7 +126,7 @@ const Features = () => {
               <Image
                 src={dollarCircle}
                 alt="dollar circle"
-                className="feature-img"
+                className="feature-img w-[7rem]"
               />
             </motion.div>
             <p className="feature-p-sub">

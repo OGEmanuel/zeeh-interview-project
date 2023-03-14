@@ -3,10 +3,17 @@ import onboard from '../public/icons/onboarding.svg';
 import notallowed from '../public/icons/not-allowed.svg';
 import document from '../public/icons/documentation.svg';
 import verify from '../public/icons/verification.svg';
+import { useRef } from 'react';
+import useRevealSection from './hooks/use-reveal-section';
 
 const Benefits = () => {
+  const ref = useRef();
+  const { display } = useRevealSection(ref);
   return (
-    <section className="mb-40">
+    <section
+      ref={ref}
+      className={`mb-40 animate-in ${display ? '' : 'section-hidden'}`}
+    >
       <h4 className="h4">THE BENEFITS OF OUR CONNECT INFRASTRUCTURE</h4>
       <div className="px-40 grid-custom">
         <div className="benefit-container bg-benefit-1 px-10">

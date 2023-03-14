@@ -4,10 +4,17 @@ import CTASub from './UI/cta-sub';
 import arrow from '../public/icons/arrow-forward.svg';
 import api from '../public/images/api-sample.png';
 import preview from '../public/images/preview.svg';
+import { useRef } from 'react';
+import useRevealSection from './hooks/use-reveal-section';
 
 const API = () => {
+  const ref = useRef();
+  const { display } = useRevealSection(ref);
   return (
-    <section>
+    <section
+      ref={ref}
+      className={`animate-in ${display ? '' : 'section-hidden'}`}
+    >
       <h3 className="text-center capitalize mb-10 font-black text-[2.6875rem] font-public text-blue-feature-card">
         developer-friendly aPI
       </h3>

@@ -1,8 +1,15 @@
+import { useRef } from 'react';
+import useRevealSection from './hooks/use-reveal-section';
 import CTAMain from './UI/cta-main';
 
 const Video = () => {
+  const ref = useRef();
+  const { display } = useRevealSection(ref);
   return (
-    <section className="mb-20">
+    <section
+      ref={ref}
+      className={`mb-20 animate-in ${display ? '' : 'section-hidden'}`}
+    >
       <h4 className="h4">WATCH THIS VIDEO TO LEARN MORE ABOUT OUR PRODUCT</h4>
       <div className="px-20 mb-10">
         <iframe

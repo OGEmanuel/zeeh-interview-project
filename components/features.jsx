@@ -5,10 +5,17 @@ import dollarCircle from '../public/icons/dollar-circle.svg';
 import Image from 'next/image';
 import CardBlack from './UI/card-black';
 import CardBlue from './UI/card-blue';
+import { useRef } from 'react';
+import useRevealSection from './hooks/use-reveal-section';
 
 const Features = () => {
+  const ref = useRef();
+  const { display } = useRevealSection(ref);
   return (
-    <section className="px-10 mb-40">
+    <section
+      ref={ref}
+      className={`px-10 mb-40 animate-in ${display ? '' : 'section-hidden'}`}
+    >
       <h4 className="h4">THE THINGS YOU GET WITH OUR CONNECT INFRASTRUCTURE</h4>
       <div className="font-mont grid-custom">
         <CardBlack>

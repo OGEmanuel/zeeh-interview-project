@@ -95,3 +95,11 @@
 .sticky {
   @apply fixed bg-white w-full z-20;
 }
+
+.section-hidden {
+  @apply opacity-0 translate-y-32;
+}
+
+.animate-in {
+  @apply transition-all ease-in duration-700;
+}

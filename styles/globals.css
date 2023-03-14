@@ -29,11 +29,11 @@
 }
 
 .li-nav {
-  @apply company text-gray-secondary;
+  @apply company text-gray-secondary hover:underline;
 }
 
 .nav-button {
-  @apply py-1.5 px-5 rounded-custom;
+  @apply py-1.5 px-5 rounded-custom border border-blue-primary;
 }
 
 .lg-bold {

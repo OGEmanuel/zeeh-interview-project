@@ -47,7 +47,7 @@ const API = () => {
         <div className="div-center flex-items-center gap-4 pb-40">
           <Link
             href="/"
-            className="nav-button bg-logo text-white text-lg font-bold font-public"
+            className="nav-button bg-logo text-white text-lg font-bold font-public hover:bg-white hover:bg-logo hover:text-transparent hover:bg-clip-text"
           >
             Get Started
           </Link>

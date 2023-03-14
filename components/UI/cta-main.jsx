@@ -23,7 +23,7 @@ const CTAMain = () => {
     >
       <Link
         href="/"
-        className="block nav-button bg-hero-button w-max text-white lg-bold mb-4"
+        className="block nav-button bg-hero-button w-max text-white lg-bold mb-4 hover:scale-110 transition-all"
       >
         Start Using Connect
       </Link>

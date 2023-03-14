@@ -22,7 +22,7 @@ const NavBar = props => {
     >
       <Link href="/" className="flex gap-4">
         <Image src={logo} alt="logo" />
-        <p className="text-[1.8125rem] font-mont font-extrabold bg-logo text-transparent bg-clip-text ">
+        <p className="text-[1.8125rem] font-mont font-extrabold bg-logo text-transparent bg-clip-text">
           Zeeh
         </p>
       </Link>
@@ -45,17 +45,20 @@ const NavBar = props => {
             <Image src={icon} alt="icon" />
           </button>
         </li>
-        <li className="company text-black-secondary">
+        <li className="company text-black-secondary hover:underline">
           <Link href="/">Company</Link>
         </li>
       </ul>
       <div className="flex gap-2 text-lg font-bold font-public">
-        <Link href="/" className="bg-logo text-white nav-button">
+        <Link
+          href="/"
+          className="bg-logo text-white nav-button hover:bg-white hover:bg-logo hover:text-transparent hover:bg-clip-text"
+        >
           Log in
         </Link>
         <Link
           href="/"
-          className="border border-blue-primary nav-button text-blue-primary"
+          className="nav-button text-blue-primary hover:bg-blue-primary hover:text-white"
         >
           Sign up
         </Link>

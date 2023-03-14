@@ -12,7 +12,7 @@ const Partners = () => {
   return (
     <section
       ref={ref}
-      className={`flex-items-center flex-wrap px-24 gap-8 mb-20 animate-in ${
+      className={`flex-items-center flex-wrap mx-auto w-[40rem] xl:w-auto gap-8 mb-20 animate-in xl:px-20 ${
         display ? '' : 'section-hidden'
       }`}
     >

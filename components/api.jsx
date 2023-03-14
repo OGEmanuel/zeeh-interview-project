@@ -13,18 +13,18 @@ const API = () => {
   return (
     <section
       ref={ref}
-      className={`animate-in ${display ? '' : 'section-hidden'}`}
+      className={`animate-in px-5 md:px-0 ${display ? '' : 'section-hidden'}`}
     >
       <h3 className="text-center capitalize mb-10 font-black text-[2.6875rem] font-public text-blue-feature-card">
         developer-friendly aPI
       </h3>
       <div className="bg-bg-final-section">
-        <div className="mx-5 md:mx-10 bg-final-section rounded-custom-2x relative flex flex-col-reverse md:flex-row pt-10 md:pt-20 px-7 md:px-16 mb-20 md:mb-56 gap-10 md:gap-0 max-w-[30rem] md:max-w-0 mx-auto">
+        <div className="bg-final-section rounded-custom-2x relative flex flex-col-reverse xl:flex-row pt-10 md:pt-20 px-7 md:px-16 mb-20 xl:mb-56 gap-10 xl:gap-0 max-w-[30rem] md:max-w-[40rem] xl:max-w-[70rem] mx-auto">
           <div className="text-white font-mont">
-            <p className="font-public font-black text-2xl md:text-[2.3125rem] md:w-[45%] mb-5 md:mb-36">
+            <p className="font-public font-black text-2xl xl:text-[2.3125rem] 2xl:text-[3rem] 2xl:leading-[1] xl:w-[45%] mb-5 xl:mb-36">
               For Developer, by Developer
             </p>
-            <p className="font-bold text-sm text-final-section-sub md:w-[60%] leading-[20px] md:leading-[30px] mb-5 md:mb-10">
+            <p className="font-bold text-sm 2xl:text-base text-final-section-sub md:w-[60%] 2xl:w-[70%] leading-[20px] md:leading-[30px] mb-5 md:mb-10">
               Providing a personalized experience for users. through
               Interoperable and customizable Products that can work seamlessly ,
               enabling smooth integration and data exchange.
@@ -41,10 +41,10 @@ const API = () => {
             className="absolute w-[5rem] md:w-auto top-0 right-[2.7%]"
           />
         </div>
-        <h2 className="w-[50%] mx-auto text-center font-black text-2xl md:text-[4.1875rem] capitalize text-blue-feature-card font-public mb-10">
+        <h2 className="w-[50%] mx-auto text-center font-black text-2xl md:text-4xl xl:text-[4.1875rem] capitalize text-blue-feature-card font-public mb-10 leading-[1.5]">
           infra that just works
         </h2>
-        <div className="div-center w-max flex-items-center gap-4 pb-20 md:pb-40 px-5 md:px-auto">
+        <div className="div-center w-max flex-items-center gap-4 pb-20 xl:pb-40 px-5 md:px-auto">
           <Link
             href="/"
             className="nav-button bg-logo text-white text-lg font-bold font-public hover:bg-white hover:bg-logo hover:text-transparent hover:bg-clip-text"

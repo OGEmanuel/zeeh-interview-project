@@ -9,7 +9,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className="bg-footer-bg text-white font-public px-10 md:px-20 pt-10 md:pt-20 relative pb-10">
-      <div className="flex flex-wrap items-start border-b border-border pb-5 mb-5 gap-10 md:gap-16">
+      <div className="flex flex-wrap items-start border-b border-border pb-5 mb-5 gap-10 md:gap-16 2xl:w-[80rem] mx-auto">
         <div className="flex-items-center mt-6 gap-4">
           <Image src={logo} alt="logo" />
           <Link href="/" className="text-sm">
@@ -91,7 +91,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="flex justify-between flex-wrap gap-5 md:gap-0">
+      <div className="flex justify-between flex-wrap gap-5 md:gap-0 2xl:w-[80rem] mx-auto">
         <p className="text-sm font-light">
           © All rights reserved, Zeeh Africa 2022
         </p>

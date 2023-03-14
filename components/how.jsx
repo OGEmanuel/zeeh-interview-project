@@ -43,14 +43,14 @@ const How = () => {
       <motion.div
         animate={animation}
         variants={containerVariant}
-        className="px-5 md:px-20 font-mont font-bold text-center grid-custom"
+        className="px-5 xl:px-20 font-mont font-bold text-center grid-custom"
       >
         <motion.div
           variants={childVariant}
           className="bg-how-bg-1 how-container"
         >
           <p className="how-main-p text-benefits-main-2">Create an app</p>
-          <p className="how-sub-p text-how-sub-1 md:leading-[1.5] xl:leading-normal">
+          <p className="how-sub-p text-how-sub-1">
             Create an app on the dashboard. During creation, select the product
             type; KYC in this case
           </p>
@@ -60,7 +60,7 @@ const How = () => {
           className="bg-benefits-main-3 how-container"
         >
           <p className="how-main-p text-white">integrate app link</p>
-          <p className="how-sub-p text-card-p md:leading-[1.5] xl:leading-normal">
+          <p className="how-sub-p text-card-p">
             Copy unique app link and send to customers or integrate on the
             platform for customers to click
           </p>
@@ -72,7 +72,7 @@ const How = () => {
           <p className="how-main-p text-benefits-main-3">
             Get authentication from customers
           </p>
-          <p className="how-sub-p text-header-body md:leading-[1.5] xl:leading-normal">
+          <p className="how-sub-p text-header-body">
             Customers keys in correct bank details (for any bank at all in
             Nigeria)
           </p>
@@ -82,7 +82,7 @@ const How = () => {
           className="how-container shadow-2xl"
         >
           <p className="how-main-p text-benefits-main-3">confirm query</p>
-          <p className="how-sub-p text-header-body md:leading-[1.5] xl:leading-normal">
+          <p className="how-sub-p text-header-body">
             If successful, you will be notified by email about newly added
             customers
           </p>

@@ -65,7 +65,7 @@ const Features = () => {
               <Image
                 src={wallet}
                 alt="wallet"
-                className="feature-img w-[7rem]"
+                className="feature-img w-[7rem] md:w-[6rem] xl:w-[7rem]"
               />
             </motion.div>
             <p className="feature-p-sub">
@@ -86,7 +86,7 @@ const Features = () => {
               <Image
                 src={transaction}
                 alt="transaction"
-                className="feature-img w-[7rem]"
+                className="feature-img w-[7rem] md:w-[6rem] xl:w-[7rem]"
               />
             </motion.div>
             <p className="feature-p-sub">
@@ -106,7 +106,7 @@ const Features = () => {
               <Image
                 src={dollarCard}
                 alt="dollar card"
-                className="feature-img w-[5rem]"
+                className="feature-img w-[7rem] md:w-[4rem] xl:w-[7rem]"
               />
             </motion.div>
             <p className="feature-p-sub">
@@ -126,7 +126,7 @@ const Features = () => {
               <Image
                 src={dollarCircle}
                 alt="dollar circle"
-                className="feature-img w-[7rem]"
+                className="feature-img w-[7rem] md:w-[6rem] xl:w-[7rem]"
               />
             </motion.div>
             <p className="feature-p-sub">

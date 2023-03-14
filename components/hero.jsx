@@ -35,7 +35,7 @@ const Hero = () => {
   return (
     <section ref={ref} className="bg-hero mb-5 md:mb-10 px-5 md:px-auto">
       <NavBar sticky={sticky} onGetNavHeight={getNavHeight} />
-      <div className="pt-5 xl:pt-20 pb-0 md:pb-20 xl:pb-56 text-center max-w-[30rem] xl:max-w-0 mx-auto">
+      <div className="pt-5 xl:pt-20 pb-0 md:pb-20 xl:pb-56 text-center max-w-[30rem] xl:max-w-none mx-auto">
         <div className="font-public">
           <p className="text-gray-secondary md:text-lg mb-2.5 md:mb-auto">
             CONNECT

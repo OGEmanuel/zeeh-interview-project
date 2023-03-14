@@ -45,7 +45,7 @@ const Benefits = () => {
       <motion.div
         animate={animation}
         variants={containerVariant}
-        className="xl:px-40 grid-custom"
+        className="px-10 grid-custom"
       >
         <motion.div
           variants={childVariant}

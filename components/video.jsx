@@ -20,7 +20,7 @@ const Video = () => {
           allowFullScreen
           title="video"
           frameBorder="0"
-          className="h-96 md:h-[35.0625rem] w-full"
+          className="h-96 md:h-[30rem] xl:h-[35.0625rem] 2xl:h-[50rem] w-full"
         />
       </div>
       <CTAMain />

@@ -17,7 +17,7 @@
 }
 
 .grid-custom {
-  @apply grid grid-cols-[repeat(auto-fit,_minmax(15rem,_1fr))] md:grid-cols-[repeat(auto-fit,_minmax(25rem,_1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(30rem,_1fr))] gap-x-5 gap-y-5 md:gap-y-10 mx-auto max-w-[25rem] md:max-w-[35rem] xl:max-w-0;
+  @apply grid grid-cols-[repeat(auto-fit,_minmax(15rem,_1fr))] md:grid-cols-[repeat(auto-fit,_minmax(20rem,_1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(30rem,_1fr))] gap-x-5 gap-y-5 md:gap-y-10 mx-auto max-w-[25rem] md:max-w-[60rem] xl:max-w-[80rem];
 }
 
 .h4 {
@@ -41,11 +41,11 @@
 }
 
 .feature-p-main {
-  @apply text-white font-bold text-xl md:text-[1.875rem];
+  @apply text-white font-bold text-xl md:text-lg xl:text-[1.875rem];
 }
 
 .feature-p-sub {
-  @apply text-xs md:text-[1.0625rem] text-card-p font-bold xl:w-96 md:leading-[1.5] xl:leading-normal;
+  @apply text-xs md:text-sm xl:text-[1.0625rem] text-card-p font-bold xl:w-96 md:leading-[1.5] xl:leading-normal;
 }
 
 .feature-card {
@@ -61,7 +61,7 @@
 }
 
 .benefit-sub-last {
-  @apply font-mont text-sm md:text-[1.0625rem] pt-3 pb-10;
+  @apply font-mont text-sm md:text-[1.0625rem] pt-3 pb-10 xl:w-[30rem] xl:mx-auto;
 }
 
 .benefit-p-sub {
@@ -73,15 +73,15 @@
 }
 
 .how-container {
-  @apply rounded-custom-2x pt-5 md:pt-10 pb-16 xl:pb-28 md:px-10 xl:px-16 flex-col-between;
+  @apply rounded-custom-2x pt-5 md:pt-10 pb-10 md:pb-16 xl:pb-28 px-5 md:px-10 xl:px-16 flex-col-between;
 }
 
 .how-main-p {
-  @apply text-lg md:text-[1.875rem] capitalize mb-7;
+  @apply text-lg md:text-xl xl:text-[1.875rem] capitalize mb-7 md:leading-[1.5] xl:leading-normal;
 }
 
 .how-sub-p {
-  @apply text-sm md:text-[1.0625rem];
+  @apply text-sm md:text-[1.0625rem] md:leading-[1.5] xl:leading-normal;
 }
 
 .footer-spacing {

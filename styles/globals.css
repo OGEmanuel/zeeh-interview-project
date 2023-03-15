@@ -43,7 +43,7 @@
 }
 
 .company {
-  @apply font-bold md:text-xs xl:text-[1.0278875rem];
+  @apply font-bold text-[1.0278875rem] md:text-xs xl:text-[1.0278875rem];
 }
 
 .li-nav {

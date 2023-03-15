@@ -23,9 +23,9 @@ const HamburgerMenu = ({ onCheck }) => {
         className="bg-white w-[3rem] h-[3rem] rounded-[50%] fixed z-20 top-[.5rem] right-[1rem] shadow-lg text-center cursor-pointer"
       >
         <span
-          className={`w-[1.5rem] h-[2px] before:w-[1.5rem] before:h-[2px] before:bg-blue-feature-card after:w-[1.5rem] after:h-[3px] after:bg-blue-feature-card inline-block before:inline-block after:inline-block relative before:absolute after:absolute before:left-0 after:left-0 mt-[1.45rem] transition-menu ${
+          className={`w-[1.5rem] h-[2px] before:w-[1.5rem] before:h-[2px] before:bg-blue-feature-card after:w-[1.5rem] after:h-[2px] 2xl:after:h-[3px] after:bg-blue-feature-card inline-block before:inline-block after:inline-block relative before:absolute after:absolute before:left-0 after:left-0 mt-[1.45rem] transition-menu ${
             checked
-              ? 'bg-transparent before:rotate-[135deg] after:-rotate-[135deg] before:top-[1px] after:top-[0px]'
+              ? 'bg-transparent before:rotate-[135deg] after:-rotate-[135deg] before:top-[1px] after:top-[1px] 2xl:before:top-[1px] 2xl:after:top-[0px]'
               : 'bg-blue-feature-card'
           } ${
             hover

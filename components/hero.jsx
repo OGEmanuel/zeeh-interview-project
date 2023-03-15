@@ -32,7 +32,7 @@ const Hero = () => {
     return () => {
       if (refs) partnersObserver.unobserve(refs);
     };
-  }, [ref]);
+  }, [ref, height]);
   return (
     <section ref={ref} className="bg-hero mb-5 md:mb-10">
       <NavBar sticky={sticky} onGetNavHeight={getNavHeight} />

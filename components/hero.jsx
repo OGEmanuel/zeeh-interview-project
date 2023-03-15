@@ -7,8 +7,12 @@ const Hero = () => {
   const ref = useRef();
   const [sticky, setSticky] = useState(false);
   const [height, setHeight] = useState(0);
+  const [checked, setChecked] = useState();
   const getNavHeight = height => {
     setHeight(height);
+  };
+  const getChecked = check => {
+    setChecked(check);
   };
 
   const stickyNav = entries => {
@@ -33,9 +37,9 @@ const Hero = () => {
     };
   }, [ref]);
   return (
-    <section ref={ref} className="bg-hero mb-5 md:mb-10 px-5 md:px-auto">
+    <section ref={ref} className="bg-hero mb-5 md:mb-10">
       <NavBar sticky={sticky} onGetNavHeight={getNavHeight} />
-      <div className="pt-5 xl:pt-20 pb-0 md:pb-20 xl:pb-56 text-center max-w-[30rem] xl:max-w-none mx-auto">
+      <div className="pt-5 xl:pt-20 pb-0 md:pb-20 xl:pb-56 text-center max-w-[30rem] xl:max-w-none mx-auto px-5">
         <div className="font-public">
           <p className="text-gray-secondary md:text-lg mb-2.5 md:mb-auto">
             CONNECT

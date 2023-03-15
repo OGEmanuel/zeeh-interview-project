@@ -4,6 +4,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .transform-bg {
+    transform: scale(80);
+  }
+
+  .transition-bg {
+    transition: transform 0.8s;
+  }
+
+  .transition-nav {
+    transition: all 0.8s;
+  }
+
+  .transition-menu {
+    transition: all 0.2s;
+  }
+}
+
 .flex-items-center {
   @apply flex items-center;
 }
@@ -25,15 +43,15 @@
 }
 
 .company {
-  @apply font-bold text-[1.0278875rem];
+  @apply font-bold md:text-xs xl:text-[1.0278875rem];
 }
 
 .li-nav {
-  @apply company text-gray-secondary hover:underline;
+  @apply company text-white md:text-gray-secondary hover:underline;
 }
 
 .nav-button {
-  @apply py-1.5 px-5 rounded-custom border border-blue-primary;
+  @apply px-5 py-1.5 md:py-[3px] xl:py-1.5 md:px-2 xl:px-5 rounded-custom border border-blue-primary;
 }
 
 .lg-bold {

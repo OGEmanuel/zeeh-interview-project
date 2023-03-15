@@ -13,7 +13,7 @@ const containerVariant = {
     opacity: 1,
     scale: 1,
     transition: {
-      delayChildren: 0.3,
+      delayChildren: 0.5,
       staggerChildren: 0.2,
     },
   },

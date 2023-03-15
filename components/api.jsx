@@ -13,12 +13,12 @@ const API = () => {
   return (
     <section
       ref={ref}
-      className={`animate-in px-5 md:px-0 ${display ? '' : 'section-hidden'}`}
+      className={`animate-in md:px-0 ${display ? '' : 'section-hidden'}`}
     >
       <h3 className="text-center capitalize mb-10 font-black text-[2.6875rem] font-public text-blue-feature-card">
         developer-friendly aPI
       </h3>
-      <div className="bg-bg-final-section">
+      <div className="bg-bg-final-section px-5">
         <div className="bg-final-section rounded-custom-2x relative flex flex-col-reverse xl:flex-row pt-10 md:pt-20 px-7 md:px-16 mb-20 xl:mb-56 gap-10 xl:gap-0 max-w-[30rem] md:max-w-[40rem] xl:max-w-[70rem] mx-auto">
           <div className="text-white font-mont">
             <p className="font-public font-black text-2xl xl:text-[2.3125rem] 2xl:text-[3rem] 2xl:leading-[1] xl:w-[45%] mb-5 xl:mb-36">
@@ -41,7 +41,7 @@ const API = () => {
             className="absolute w-[5rem] md:w-auto top-0 right-[2.7%]"
           />
         </div>
-        <h2 className="w-[50%] mx-auto text-center font-black text-2xl md:text-4xl xl:text-[4.1875rem] capitalize text-blue-feature-card font-public mb-10 leading-[1.5]">
+        <h2 className="w-[50%] mx-auto text-center font-black text-2xl md:text-4xl xl:text-[4.1875rem] capitalize text-blue-feature-card font-public mb-10 leading-[1.5] md:leading-[1.6]">
           infra that just works
         </h2>
         <div className="div-center w-max flex-items-center gap-4 pb-20 xl:pb-40 px-5 md:px-auto">

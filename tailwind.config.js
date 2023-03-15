@@ -30,6 +30,7 @@ module.exports = {
           'linear-gradient(242.61deg, #267E9E -21.75%, #081C3A 59.64%)',
         'bg-final-section':
           'linear-gradient(167.21deg, rgba(217, 217, 217, 0) 13.78%, rgba(217, 190, 255, 0.33) 33.92%, rgba(217, 189, 255, 0.49) 52.41%, rgba(241, 231, 255, 0) 66.84%)',
+        'mobile-nav': 'radial-gradient(#1A23DC, #62228A)',
       },
       colors: {
         'gray-secondary': '#707070',

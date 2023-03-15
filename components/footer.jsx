@@ -39,7 +39,7 @@ const Footer = () => {
             </li>
           </ul>
           <ul>
-            <li className="font-bold footer-spacing">Resources</li>
+            <li className="font-bold mb-2">Resources</li>
             <li className="footer-spacing">
               <Link href="/">API docs</Link>
             </li>
@@ -54,7 +54,7 @@ const Footer = () => {
             </li>
           </ul>
           <ul>
-            <li className="font-bold footer-spacing">Company</li>
+            <li className="font-bold mb-2">Company</li>
             <li className="footer-spacing">
               <Link href="/">About us</Link>
             </li>
@@ -69,7 +69,7 @@ const Footer = () => {
             </li>
           </ul>
           <ul>
-            <li className="font-bold footer-spacing">Legal</li>
+            <li className="font-bold mb-2">Legal</li>
             <li className="footer-spacing half-width">
               <Link href="/">Developer Policy</Link>
             </li>

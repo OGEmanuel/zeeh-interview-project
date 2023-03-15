@@ -4,7 +4,7 @@ const CTAMobile = ({ checked }) => {
   return (
     <div
       className={`flex gap-2 text-lg font-bold font-public fixed bottom-[15%] left-[50%] translate-x-[-50%] translate-y-[-50%] transition-nav md:hidden
-      ${checked ? 'w-max opacity-1 z-30' : 'opacity-0 w-0'}
+      ${checked ? 'w-max opacity-1 z-30' : 'opacity-0 w-0 -z-30'}
       `}
     >
       <Link

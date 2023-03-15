@@ -6,7 +6,7 @@ const ULMobile = ({ checked }) => {
   return (
     <ul
       className={`flex items-center md:hidden flex-col gap-6 font-mont fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-70%] transition-nav ${
-        checked ? 'w-max opacity-1 z-30' : 'opacity-0 w-0'
+        checked ? 'w-max opacity-1 z-30' : 'opacity-0 w-0 -z-30'
       }`}
     >
       <li className="li-nav">

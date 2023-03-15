@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import logo from '../public/images/logo.png';
-import icon from '../public/icons/icon-nav.svg';
+import icon from '../public/icons/nav-icon.svg';
 import { useEffect, useRef, useState } from 'react';
 import HamburgerMenu from './UI/hamburger-menu';
 import ULMobile from './UI/ul-mobile';
@@ -14,7 +14,7 @@ const NavBar = props => {
 
   useEffect(() => {
     onGetNavHeight(ref.current.getBoundingClientRect().height);
-  }, []);
+  }, [onGetNavHeight]);
 
   const check = checked => {
     setChecked(checked);

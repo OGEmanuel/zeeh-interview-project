@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import icon from '../../public/icons/icon-nav.svg';
+import icon from '../../public/icons/nav-icon.svg';
 
 const ULMobile = ({ checked }) => {
   return (

@@ -11,13 +11,14 @@ const useRevealSection = ref => {
     }
   };
   useEffect(() => {
+    const refs = ref.current;
     const sectionObserver = new IntersectionObserver(revealSection, {
       root: null,
       threshold: 0,
     });
-    if (ref.current) sectionObserver.observe(ref.current);
+    if (refs) sectionObserver.observe(refs);
     return () => {
-      if (ref.current) sectionObserver.unobserve(ref.current);
+      if (refs) sectionObserver.unobserve(refs);
     };
   }, [ref]);
   return { display };

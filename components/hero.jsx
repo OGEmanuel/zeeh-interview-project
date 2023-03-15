@@ -22,14 +22,15 @@ const Hero = () => {
   };
 
   useEffect(() => {
+    const refs = ref.current;
     const partnersObserver = new IntersectionObserver(stickyNav, {
       root: null,
       threshold: 0,
       rootMargin: `-${height}px`,
     });
-    if (ref.current) partnersObserver.observe(ref.current);
+    if (refs) partnersObserver.observe(refs);
     return () => {
-      if (ref.current) partnersObserver.unobserve(ref.current);
+      if (refs) partnersObserver.unobserve(refs);
     };
   }, [ref]);
   return (

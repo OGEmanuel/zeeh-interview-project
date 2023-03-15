@@ -7,12 +7,8 @@ const Hero = () => {
   const ref = useRef();
   const [sticky, setSticky] = useState(false);
   const [height, setHeight] = useState(0);
-  const [checked, setChecked] = useState();
   const getNavHeight = height => {
     setHeight(height);
-  };
-  const getChecked = check => {
-    setChecked(check);
   };
 
   const stickyNav = entries => {
